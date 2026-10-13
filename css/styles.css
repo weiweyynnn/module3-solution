@@ -1,0 +1,129 @@
+/*
+ * Module 3 - Food, LLC
+ * Bootstrap 3's grid and navigation are used in the markup.
+ * Only visual customizations live here; there are no inline styles.
+ */
+
+body {
+  background-color: #ffffff;
+  color: #202428;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* The navbar remains in normal flow so it scrolls away with the page. */
+#header-nav {
+  margin-bottom: 0;
+  background-color: #aeb8c0;
+  border: 0;
+  border-bottom: 2px solid #47525c;
+  border-radius: 0;
+}
+
+#header-nav .navbar-header {
+  min-height: 66px;
+}
+
+#header-nav .navbar-brand {
+  height: 66px;
+  padding: 20px 15px;
+  color: #172027;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+#header-nav .navbar-brand:hover,
+#header-nav .navbar-brand:focus {
+  color: #172027;
+}
+
+#header-nav .navbar-toggle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #47525c;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+#header-nav .navbar-toggle .icon-bar {
+  background-color: #35424c;
+}
+
+#header-nav .navbar-toggle:hover,
+#header-nav .navbar-toggle:focus {
+  background-color: #dbe0e4;
+}
+
+/* The only dropdown links are wrapped in Bootstrap's visible-xs class. */
+#mobile-nav {
+  border: 0;
+  box-shadow: none;
+}
+
+#mobile-nav .navbar-nav {
+  background-color: #edf1f3;
+}
+
+#mobile-nav .navbar-nav > li > a {
+  padding: 11px 15px;
+  color: #172027;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  border-top: 1px solid #bcc6cc;
+}
+
+#mobile-nav .navbar-nav > li:last-child > a {
+  border-bottom: 1px solid #bcc6cc;
+}
+
+#mobile-nav .navbar-nav > li > a:hover,
+#mobile-nav .navbar-nav > li > a:focus {
+  background-color: #d4dde2;
+}
+
+#our-menu {
+  margin: 34px 0 30px;
+  color: #172027;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+/* One col-xs-12 section fills a row on mobile, tablet, and desktop. */
+.menu-panel {
+  min-height: 1070px;
+  margin-bottom: 32px;
+  padding: 18px 27px 30px;
+  background-color: #d7dee3;
+}
+
+.menu-panel h2 {
+  margin: 5px 0 22px;
+  color: #172027;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.menu-panel p {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 767px) {
+  #our-menu {
+    margin: 28px 0 25px;
+    font-size: 30px;
+  }
+
+  .menu-panel {
+    min-height: 1120px;
+    padding: 16px 19px 25px;
+  }
+
+  /* Remove Bootstrap's default list margins so the menu touches both edges. */
+  #mobile-nav .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Food, LLC's responsive menu page for Module 3.">
+  <title>Food, LLC | Our Menu</title>
+
+  <!-- Bootstrap 3.4.1; stored locally so the assignment works offline. -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Custom styles must remain in a separate CSS file. -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <!-- This is a regular navbar, NOT a fixed or sticky navbar. -->
+    <nav id="header-nav" class="navbar navbar-default" aria-label="Main navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#top">Food, LLC</a>
+
+          <!-- Three-bar hamburger button: visible only at the xs breakpoint. -->
+          <button type="button" class="navbar-toggle collapsed visible-xs"
+                  data-toggle="collapse" data-target="#mobile-nav"
+                  aria-expanded="false" aria-controls="mobile-nav">
+            <span class="sr-only">Toggle navigation menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="mobile-nav" class="collapse navbar-collapse">
+          <!-- Bootstrap's visible-xs hides these links on tablet and desktop. -->
+          <ul class="nav navbar-nav visible-xs text-center">
+            <li><a href="#menu-content">Chicken</a></li>
+            <li><a href="#menu-content">Beef</a></li>
+            <li><a href="#menu-content">Sushi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- text-center is the required Bootstrap heading alignment utility. -->
+    <h1 id="our-menu" class="text-center">Our Menu</h1>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Exactly ONE tall content section, full-width at every breakpoint. -->
+        <section id="menu-content" class="col-xs-12" aria-labelledby="chicken-heading">
+          <div class="menu-panel">
+            <h2 id="chicken-heading" class="text-center">Chicken</h2>
+            <p>Welcome to the Food, LLC kitchen, where a good chicken dish begins with fresh ingredients and a little extra care. We prepare our chicken with balanced seasonings, aromatic herbs, and a cooking method that brings out its natural flavor. Whether you prefer something comforting and familiar or a plate with a bright, bold taste, there is always something satisfying about a meal made with attention to detail.</p>
+            <p>Our classic roasted chicken is seasoned with garlic, pepper, and a blend of garden herbs. It is cooked until the outside is beautifully golden and the inside stays tender and juicy. We enjoy serving it with simple sides that complement the main dish rather than overpower it. Every bite is meant to be flavorful, comforting, and easy to enjoy with family or friends.</p>
+            <p>For guests who enjoy a little more heat, our spicy chicken brings together warm spices with a lively finish. The seasoning is carefully layered so the flavor arrives first and the spice follows. The result is a hearty dish that tastes great on its own or alongside rice and vegetables. It is a delicious choice for anyone looking to bring a little excitement to an everyday lunch or dinner.</p>
+            <p>Another kitchen favorite is our lemon and herb chicken. Fresh citrus adds brightness, while fragrant herbs give the dish a light and inviting aroma. The chicken is prepared to remain moist and tender, then paired with sides that make the whole meal feel complete. Its simple combination of ingredients proves that a memorable dish does not have to be complicated.</p>
+            <p>We also believe that texture makes a big difference. A crisp coating, a soft and juicy center, or a savory glaze can transform a familiar recipe into something special. That is why we take care with each step of preparation, from choosing the ingredients to serving the finished plate. Our goal is to make every chicken meal enjoyable from the first bite to the last.</p>
+            <p>Good food is also about sharing. A warm chicken meal can turn a quick break into a relaxing moment and bring everyone around the table together. At Food, LLC, we keep that experience in mind when planning our menu. We want our dishes to feel welcoming, generous, and full of the flavors people look forward to eating again.</p>
+            <p>Thank you for exploring our menu. We are glad to share our passion for well-prepared chicken with you, and we hope the dishes we serve make your day a little better. Our approach is simple: start with quality ingredients, cook with care, and make food that tastes as inviting as it looks.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bootstrap 3's collapse component needs jQuery and Bootstrap JS. -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
